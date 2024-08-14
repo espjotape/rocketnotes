@@ -42,6 +42,10 @@ export const Menu = styled.ul`
 `
 export const Search = styled.div`
   grid-area: search;
+  border: none;
+
+  color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `
 export const Content = styled.div`
@@ -50,5 +54,16 @@ export const Content = styled.div`
 `
 export const NewNote = styled.button`
   grid-area: newnote;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > svg {
+    margin-right: 8px;
+  };
+
+  border: none;
+  color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
   background-color: ${({ theme }) => theme.COLORS.ORANGE};
 `
