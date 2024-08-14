@@ -43,14 +43,11 @@ export const Menu = styled.ul`
 export const Search = styled.div`
   grid-area: search;
   border: none;
-
-  color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+  padding: 64px 64px 0;
 `
 export const Content = styled.div`
   grid-area: content;
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+ 
 `
 export const NewNote = styled.button`
   grid-area: newnote;
