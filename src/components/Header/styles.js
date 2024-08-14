@@ -21,7 +21,10 @@ export const Profile = styled.div`
   > img {
     height: 56px; 
     width: 56px;
-    border-radius: 50%
+    border-radius: 50%;
+   
+    box-shadow: 0px 0px 0px 3px ${({ theme }) => theme.COLORS.ORANGE};
+    border: 3px solid #312E38;
   }
 
   > div {
@@ -46,8 +49,13 @@ export const Logout = styled.button`
   border: none;
   background: none;
 
+  
   svg {
     font-size: 36px;
-    color: ${({ theme }) => theme.COLORS.GRAY_100}
+    color: ${({ theme }) => theme.COLORS.GRAY_100};
+    transition: 0.4s;
+  }
+  svg:hover {
+    color: ${({ theme }) => theme.COLORS.ORANGE}
   }
 `
