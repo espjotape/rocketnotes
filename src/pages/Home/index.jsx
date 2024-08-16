@@ -34,8 +34,8 @@ export function Home(){
           <Note data={{
             title: 'React Modal',
             tags: [
-              {id : '1', name: 'react'},
-              {id : '2', name: 'rocketseat'}
+              { id : '1', name: 'react' },
+              { id : '2', name: 'rocketseat' },
             ]
           }}/>
           
