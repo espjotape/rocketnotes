@@ -14,7 +14,7 @@ export const Container = styled.div`
   > input {
     width: 100%;
 
-    padding: 12px;
+    padding: 19px;
     border: 0;
     background: transparent;
     color: ${({ theme }) => theme.COLORS.WHITE};
