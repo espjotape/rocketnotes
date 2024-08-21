@@ -4,7 +4,8 @@ import { Container } from "./styles";
 export function NoteItem({ isNew, value, onClick, ...rest }) {
     return (
         <Container $isnew={isNew}>
-            <input type="text" 
+            <input 
+                type="text" 
                 value={value}
                 readOnly={!isNew}
                 {...rest}
@@ -17,5 +18,5 @@ export function NoteItem({ isNew, value, onClick, ...rest }) {
                 {isNew ? <FiPlus /> : <FiX />}
             </button>
         </Container>
-    )
+    );
 }
